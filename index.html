@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Yellow Messenger</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="jumbotron jumbotron-fluid" style="padding: 1rem 0 0 0;">
+        <div class="container">
+            <div class="row justifyCenter">
+                <img src="./assets/images/claims.png" alt="claims">
+            </div>
+        </div>
+    </section>
+    <section class="jumbotron jumbotron-fluid bg_light_pink" style="padding: 1rem 0 5rem 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <div class="row justifyCenter">
+                            <div class="col-12 text-center">
+                                <p class="md-2" style="font-weight: bold;font-size: 1.30rem;">We’re here to guide you
+                                    through each step. First, tell us what happened.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-3 text-center cursor justifyCenter" style="display: flex;padding: 0;margin: 1rem 0 0 0.5rem;" onclick="getAccidentPage()">
+                                <div class="flip-card" style="background: white;">
+                                    <div class="flip-card-inner justifyCenter vertical-center">
+                                        <div class="front">
+                                            <div class="card-body">
+                                                <h3>ACCIDENT</h3>
+                                                <p>I got into an accident.</p>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>
+                                                <p class="p-2">We have your back and we're here to help you focus on your recovery.</p>
+                                                <div style="background: #b8123e;color: white; margin: 1rem; padding: 0.5rem;">FILE A CLAIM NOW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center cursor justifyCenter" style="display: flex;padding: 0;margin: 1rem 0 0 0.5rem;" onclick="getIllnessPage()">
+                                <div class="flip-card" style="background: white;">
+                                    <div class="flip-card-inner justifyCenter vertical-center">
+                                        <div class="front">
+                                            <div class="card-body">
+                                                <h3>ILLNESS</h3>
+                                                <p>I’m sick and I need assistance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>
+                                                <p class="p-2">Don't worry about your medical expenses because we're here for you.</p>
+                                                <div style="background: #b8123e;color: white; margin: 1rem; padding: 0.5rem;">FILE A CLAIM NOW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center cursor justifyCenter" style="display: flex;padding: 0;margin: 1rem 0 0 0.5rem;" onclick="getDeathPage()">
+                                <div class="flip-card" style="background: white;">
+                                    <div class="flip-card-inner justifyCenter vertical-center">
+                                        <div class="front">
+                                            <div class="card-body">
+                                                <h3>DEATH</h3>
+                                                <p>Someone I know has died and I am the beneficiary.</p>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>
+                                                <p class="p-2">Nothing can be harder than losing someone close to us, that's why we're
+                                                    here to help you in this trying time.</p>
+                                                <div style="background: #b8123e;color: white; margin: 1rem; padding: 0.5rem;">FILE A CLAIM NOW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-md-3 text-center cursor" onclick="getIllnessPage()">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front vertical-center">
+                                            <div class="card-body">
+                                                <h3>ILLNESS</h3>
+                                                <p>I’m sick and I need assistance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back vertical-center">
+                                            <div>
+                                                <p>Don't worry about your medical expenses because we're here for you.</p>
+                                                <div style="background: #b8123e;color: white; margin: 1rem; padding: 0.5rem;">FILE A CLAIM NOW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 text-center cursor" onclick="getDeathPage()">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front vertical-center">
+                                            <div class="card-body">
+                                                <h3>DEATH</h3>
+                                                <p>Someone I know has died and I am the beneficiary.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back vertical-center">
+                                            <div>
+                                                <p>Nothing can be harder than losing someone close to us, that's why we're
+                                                    here to help you in this trying time.</p>
+                                                <div style="background: #b8123e;color: white; margin: 1rem; padding: 0.5rem;">FILE A CLAIM NOW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function getAccidentPage() {
+            console.log('get accident page ');
+            window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "nextaction",
+                                data: "accident"
+                            }
+                        })
+                    }), '*');
+        }
+
+        function getIllnessPage() {
+            console.log('get illness page ');
+            window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "nextaction",
+                                data: "illness"
+                            }
+                        })
+                    }), '*');
+        }
+
+        function getDeathPage() {
+            console.log('get death page ');
+            window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "nextaction",
+                                data: "death"
+                            }
+                        })
+                    }), '*');
+        }
+
+    </script>
+</body>
+
+</html>
